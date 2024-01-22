@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="./google-sans-cufonfonts/ProductSans-Black.ttf" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Bard</title>
+</head>
+
+<body>
+  <header class="flex header">
+    <div class="col flex">
+      <span class="material-symbols-outlined md-text" data-toggler> menu </span>
+      <h3 class="md-text brand">Bard</h3>
+    </div>
+    <div class="theme">
+      <span class="material-symbols-outlined " title="dark_mode" name="dark" data-dark-mode>
+        dark_mode
+      </span>
+      <span class="material-symbols-outlined active" title="light_mode" name="light" data-light-mode>
+        contrast
+      </span>
+    </div>
+    <div class="profile flex" title="profile">
+      <img
+        src="https://lh3.googleusercontent.com/-wy8JEnAmpDQ/AAAAAAAAAAI/AAAAAAAAAAA/AFNEGgJmmZw6i7uEcKBu1fg6ezSdDH87SA/photo.jpg?sz=46"
+        alt="User" />
+    </div>
+   
+  </header>
+  <div class="container" data-container>
+    <div class="overlly" data-toggler data-overllay></div>
+    <div class="navbar" data-navbar>
+      <div class="navtop flex">
+        <span class="md-text">Recent</span>
+        <span class="material-symbols-outlined md-text">expand_more</span>
+      </div>
+      <ul class="navigation">
+        <li class="nav-list">
+          <a href="#" class="md-text flex nav-link">
+            <span class="material-symbols-outlined"> history </span>
+            Bard Activity
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="#" class="md-text flex nav-link">
+            <span class="material-symbols-outlined"> extension </span>
+            Extention
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="#" class="md-text flex nav-link">
+            <span class="material-symbols-outlined">
+              security_update_good
+            </span>
+            Updates
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="#" class="md-text flex nav-link">
+            <span class="material-symbols-outlined"> help </span>
+            Help
+          </a>
+        </li>
+        <li class="nav-list">
+          <a href="#" class="md-text flex nav-link">
+            <span class="material-symbols-outlined"> settings </span>
+            Settings
+          </a>
+        </li>
+      </ul>
+      <div class="navaction">
+        <ul>
+          <li class="sm-text">
+            Mathbaria, Bangladesh
+            <a href="#">From your IP address • Update location</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="message-box">
+      <div class="message-top flex">
+        <img src="https://www.gstatic.com/lamda/images/sparkle_resting_v2_darkmode_2bdb7df2724e450073ede.gif" />
+        <span class="material-symbols-outlined md-text"> refresh </span>
+      </div>
+      <div class="message-content" data-message-container>
+        <h1 class="head-text">Hello again</h1>
+        <span class="md-text">Tell me what’s on your mind, or pick a suggestion.</span>
+        <div class="cards" data-cards>
+          <div class="card">
+            <h2 class="card-title">Create</h2>
+            <div class="card-content">
+              <h4 class="card-pill md-text" data-key-pill>JavaScrit More</h4>
+              <h4 class="card-pill md-text" data-key-pill>SQL DataBase</h4>
+              <h4 class="card-pill md-text" data-key-pill>What is GPT-4</h4>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Understand</h2>
+            <div class="card-content">
+              <h4 class="card-pill md-text" data-key-pill>AI Learning</h4>
+              <h4 class="card-pill md-text" data-key-pill>React Vs Vue</h4>
+              <h4 class="card-pill md-text" data-key-pill>Python Vs JS</h4>
+            </div>
+          </div>
+          <div class="card">
+            <h2 class="card-title">Explore</h2>
+            <div class="card-content">
+              <h4 class="card-pill md-text" data-key-pill>Block Chine</h4>
+              <h4 class="card-pill md-text" data-key-pill>DataBase Learn</h4>
+              <h4 class="card-pill md-text" data-key-pill>CSE Student</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Data  -->
+        <ul class="data-list" data-chat-container>
+          
+        </ul>
+      </div>
+      <div class="message-action">
+        <span class="material-symbols-outlined"> add_to_photos </span>
+        <div class="input-fill">
+          <input type="text" placeholder="Enter a prompt here"  data-chat-input />
+        </div>
+        <span class="material-symbols-outlined" data-chat-send-btn> send </span>
+      </div>
+      <div class="side-scroll">
+        <span name="left" class="material-symbols-outlined" data-scroll-left data-side-scroll>
+          chevron_left
+        </span>
+        <span name="right" class="material-symbols-outlined" data-scroll-right data-side-scroll>
+          chevron_right
+        </span>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
